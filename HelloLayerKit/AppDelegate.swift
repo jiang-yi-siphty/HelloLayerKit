@@ -8,15 +8,21 @@
 
 import UIKit
 import CoreData
+import LayerKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let appID = URL(string: "layer:///apps/staging/da7170a8-d0fd-11e8-b1aa-23f1fc4f7af0")
+        let layerClient = LYRClient(appID: appID!, delegate: self, options: nil)
+        layerClient.connect { (success, error) in
+            success ? print("Successfully connected to Layer!") : print("Failed connection to Layer with error: \(String(describing: error))")
+        }
         return true
     }
 
@@ -87,6 +93,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+
+}
+
+extension AppDelegate: LYRClientDelegate {
+    func layerClient(_ client: LYRClient, didReceiveAuthenticationChallengeWithNonce nonce: String) {
+        print("layerClient(_ client: LYRClient, didReceiveAuthenticationChallengeWithNonce nonce: String) ")
     }
 
 }

@@ -59,6 +59,7 @@
 		A2A5D8D3217595BF00A92892 /* HelloLayerKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloLayerKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A5D8D7217595BF00A92892 /* HelloLayerKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloLayerKitUITests.swift; sourceTree = "<group>"; };
 		A2A5D8D9217595BF00A92892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2A5D8E52175A06100A92892 /* HelloLayerKit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloLayerKit-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3B933BD689D1A3E0080C32C /* Pods-HelloLayerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloLayerKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloLayerKitTests/Pods-HelloLayerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CC92DBDAA293D80A1D03ADF5 /* Pods_HelloLayerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloLayerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -131,6 +132,7 @@
 				A2A5D8B8217595BC00A92892 /* Main.storyboard */,
 				A2A5D8BE217595BF00A92892 /* Assets.xcassets */,
 				A2A5D8C0217595BF00A92892 /* LaunchScreen.storyboard */,
+				A2A5D8E52175A06100A92892 /* HelloLayerKit-Bridging-Header.h */,
 				A2A5D8C3217595BF00A92892 /* Info.plist */,
 				A2A5D8BB217595BC00A92892 /* HelloLayerKit.xcdatamodeld */,
 			);
@@ -581,6 +583,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siphty.HelloLayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloLayerKit/HelloLayerKit-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -600,6 +604,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.siphty.HelloLayerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloLayerKit/HelloLayerKit-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
