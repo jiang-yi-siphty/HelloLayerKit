@@ -1,0 +1,16 @@
+PODS:
+  - LayerKit (4.0.4)
+
+DEPENDENCIES:
+  - LayerKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LayerKit
+
+SPEC CHECKSUMS:
+  LayerKit: 53a3b2e84f8080d487b0262e31fb27977ad70842
+
+PODFILE CHECKSUM: 8c9b24c370f674c2d48ebfc4e3ec618a6ed78d3d
+
+COCOAPODS: 1.5.3
